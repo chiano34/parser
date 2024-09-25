@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f92d2b6-6477-4d94-b334-ab12f7dbc2a3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;chiano34&quot;,
+      &quot;fullname&quot;: &quot;ravil mingazetdinov&quot;
+    }
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;http://zhuk.k-lab.su/chiano34/telegram-bot.git&quot;,
+    &quot;second&quot;: &quot;ed7c39d4-6a84-43b4-b319-89464d5e3d61&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/Main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.venv/pyvenv.cfg" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2jl2yeoSjPyWp2LRxQ39mWrvV0M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Config.executor": "Run",
+    "Python.Main.executor": "Run",
+    "Python.Middleware.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ravka/PycharmProjects/parser",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": []
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17890.14" />
+        <option value="bundled-python-sdk-5b207ade9991-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ravka\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f92d2b6-6477-4d94-b334-ab12f7dbc2a3" name="Changes" comment="" />
+      <created>1721947598675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721947598675</updated>
+      <workItem from="1721947604705" duration="563000" />
+      <workItem from="1721948180011" duration="1217000" />
+      <workItem from="1721949430558" duration="764000" />
+      <workItem from="1721979680997" duration="410000" />
+      <workItem from="1722190909353" duration="10301000" />
+      <workItem from="1722237631852" duration="19099000" />
+      <workItem from="1722321928897" duration="9622000" />
+      <workItem from="1722520129217" duration="944000" />
+      <workItem from="1722978278157" duration="5011000" />
+      <workItem from="1723043671220" duration="801000" />
+      <workItem from="1723044679010" duration="257000" />
+      <workItem from="1723142781563" duration="17489000" />
+      <workItem from="1723214530116" duration="4021000" />
+      <workItem from="1723240000375" duration="758000" />
+      <workItem from="1723311331795" duration="423000" />
+      <workItem from="1723325245787" duration="3119000" />
+      <workItem from="1723392371699" duration="1419000" />
+      <workItem from="1723393813182" duration="3391000" />
+      <workItem from="1723445845392" duration="1232000" />
+      <workItem from="1723460471050" duration="3439000" />
+      <workItem from="1723464164613" duration="2632000" />
+      <workItem from="1723473035407" duration="852000" />
+      <workItem from="1723566240614" duration="581000" />
+      <workItem from="1724150635638" duration="1617000" />
+      <workItem from="1724199096275" duration="224000" />
+      <workItem from="1724199338069" duration="196000" />
+      <workItem from="1724277363710" duration="22020000" />
+      <workItem from="1726472472671" duration="5468000" />
+      <workItem from="1726748643191" duration="3327000" />
+      <workItem from="1726776952458" duration="594000" />
+      <workItem from="1727296028157" duration="1913000" />
+      <workItem from="1727298025295" duration="3907000" />
+      <workItem from="1727301976808" duration="736000" />
+    </task>
+    <task id="LOCAL-00001" summary="&quot;Создание бета версии программы&quot;">
+      <option name="closed" value="true" />
+      <created>1721949565069</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721949565069</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добавление ручки /test для получения сообщений из публичного канала">
+      <option name="closed" value="true" />
+      <created>1722197157680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722197157680</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Обновление ручки /test для вывода всех комментариев для постов">
+      <option name="closed" value="true" />
+      <created>1722200181132</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722200181132</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Добавление ручек /add_words для добавления слов /add_channels для добавления каналов и /get_stats для получение статистики по словам по добавленным каналам">
+      <option name="closed" value="true" />
+      <created>1722260552759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722260552759</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Доработана функция get_stats">
+      <option name="closed" value="true" />
+      <created>1722329831248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722329831248</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Добавлен вывод каналов в файл и изменены названия в ручках">
+      <option name="closed" value="true" />
+      <created>1723464237247</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723464237247</updated>
+    </task>
+    <task id="LOCAL-00007" summary="обновлены данные пользователя для поиска сообщений">
+      <option name="closed" value="true" />
+      <created>1723566297876</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723566297876</updated>
+    </task>
+    <task id="LOCAL-00008" summary="обновлены данные пользователя для поиска сообщений">
+      <option name="closed" value="true" />
+      <created>1723566411350</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723566411350</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Добавлена возможность проверки нескольких слов, устранены баги, добавлены админы">
+      <option name="closed" value="true" />
+      <created>1724298960921</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724298960921</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Создание бета версии программы&quot;" />
+    <MESSAGE value="Добавление ручки /test для получения сообщений из публичного канала" />
+    <MESSAGE value="Обновление ручки /test для вывода всех комментариев для постов" />
+    <MESSAGE value="Добавление ручек /add_words для добавления слов /add_channels для добавления каналов и /get_stats для получение статистики по словам по добавленным каналам" />
+    <MESSAGE value="Доработана функция get_stats" />
+    <MESSAGE value="Добавлен вывод каналов в файл и изменены названия в ручках" />
+    <MESSAGE value="обновлены данные пользователя для поиска сообщений" />
+    <MESSAGE value="Добавлена возможность проверки нескольких слов, устранены баги, добавлены админы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена возможность проверки нескольких слов, устранены баги, добавлены админы" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/123$Main.coverage" NAME="Main Coverage Results" MODIFIED="1727297711543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
+    <SUITE FILE_PATH="coverage/pythonProject$Middleware.coverage" NAME="Middleware Coverage Results" MODIFIED="1724297173597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
+    <SUITE FILE_PATH="coverage/parser$Main.coverage" NAME="Main Coverage Results" MODIFIED="1727301574575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
+    <SUITE FILE_PATH="coverage/pythonProject$Main.coverage" NAME="Main Coverage Results" MODIFIED="1724298491338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
+    <SUITE FILE_PATH="coverage/123$Config.coverage" NAME="Config Coverage Results" MODIFIED="1726472974861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
+  </component>
+</project>
