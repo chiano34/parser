@@ -20,13 +20,14 @@ path_files='files/'
 #Каналы для мониторинга
 channels_monitoring_filename='channels_monitoring.txt'
 #Результаты обработки каналов
-results='results.txt'
-#Хранение изображений
-DOWNLOAD_FOLDER='images/'
-# Настройка логирования
+file_save='results.txt'
+#Хранение слов для поиска
+words_filename="words.txt"
+# Настройка логирования 
 logging.basicConfig(level=logging.INFO)
-
-#создание словоря для хранения слов и каналов
+#Словарь для хранения слов
+words_monitoring={}
+#создание словоря для хранения каналов
 channels_monitoring={}
 #переменная для проверки статуса мониторинга
 comments_check=False
@@ -61,42 +62,85 @@ async def post_on():
 async def post_off():
     global message_check
     message_check=False
-
+#Функция для нахождение слов в строке
+def find_words(text, search_words):
+    words = search_words.split()
+    count=0
+    text_lower = text.lower()
+    for word in words:
+        if word.lower() in text_lower:
+            count+= 1
+    if len(words)==count:
+        return True
+    else:
+        return False
+#Функция для чтения слов для мониторинга
+def read_words_monitoring():
+    with open(path_files+words_filename, 'r', encoding='utf-8') as file:
+        lines = file.readlines()
+    global words_monitoring
+    words_monitoring={}
+    for line in lines:
+        words_monitoring[line] = 0
+#Функция для сохранения постов в txt
+def add_results(filename,time,text):
+    try:
+        with open(path_files+filename, 'a') as file:  # Открываем файл в режиме добавления
+            file.write("\nВремя:\n" +str(time)+"\nТекст:\n"+str(text)+"\n")  # Записываем строку с переводом строки
+        print(f'Строка добавлена в файл {filename}.')
+    except Exception as e:
+        print(f'Произошла ошибка: {e}')
+def add_channel_to_file(filename, channel):
+    try:
+        with open(path_files+filename, 'a') as file:  # Открываем файл в режиме добавления
+            file.write("\nКанал:"+str(channel)+"\n")  # Записываем строку с переводом строки
+        print(f'Строка добавлена в файл {filename}.')
+    except Exception as e:
+        print(f'Произошла ошибка: {e}')
 
 async def monitoring_start(time_msg):
     global message_check
     global comments_check
     read_channels_monitoring()
-    datecheck=minute_ago(time_msg,datetime.datetime.now())
+    read_words_monitoring()
+    # Если необходимо установить диапозон по времени
+    # datecheck=minute_ago(time_msg,datetime.datetime.now())
     for channel_name in channels_monitoring:
         print(f"обработка канала:{channel_name}")
         try:
+            add_channel_to_file(file_save,channel_name)
             async for message in pyrogram_client.get_chat_history(channel_name):
                 try:
-                    if message.date<datecheck:
-                        break
+                    # Если необходимо установить диапозон по времени
+                    # if message.date<datecheck:
+                    #     break
                     if message_check:
-                        print(message.date)
-                        if message.photo:
-                            await pyrogram_client.download_media(message.photo, file_name=os.path.join(DOWNLOAD_FOLDER, f"{message.id}.jpg"))
-                        if message.text!=None: #обработка текста поста
-                            print(message.text)
+                        #Для скачивания фотографий
+                        # if message.photo:
+                        #     await pyrogram_client.download_media(message.photo, file_name=os.path.join(DOWNLOAD_FOLDER, f"{message.id}.jpg"))
+                        if message.text!=None:
+                            for word in words_monitoring:
+                                if find_words(message.text,word):
+                                    add_results(file_save,message.date,message.text)
                         elif message.caption!=None:
-                            print(message.caption)
-                    replies = pyrogram_client.get_discussion_replies(message.chat.id, message.id)
-                    try:
-                        count = await pyrogram_client.get_discussion_replies_count(message.chat.id, message.id)
-                    except Exception as e:
-                        continue
-                    #Вывод комментариев
-                    if comments_check:
-                        async for reply in replies:
-                            if reply.photo:
-                                await pyrogram_client.download_media(reply.photo, file_name=os.path.join(DOWNLOAD_FOLDER, f"{reply.id}.jpg"))
-                            if reply.text!=None:
-                                print(reply.text)
-                            if reply.caption!=None:
-                                print(reply.caption)
+                            for word in words_monitoring:
+                                if find_words(message.caption,word):
+                                    add_results(file_save,message.date,message.caption)
+                    #Обработка комментариев
+                    #replies = pyrogram_client.get_discussion_replies(message.chat.id, message.id)
+                    # try:
+                    #     count = await pyrogram_client.get_discussion_replies_count(message.chat.id, message.id)
+                    # except Exception as e:
+                    #     continue
+                    # #Вывод комментариев
+                    # if comments_check:
+                    #     async for reply in replies:
+                    #         if reply.photo:
+                    #             await pyrogram_client.download_media(reply.photo, file_name=os.path.join(DOWNLOAD_FOLDER, f"{reply.id}.jpg"))
+                    #         if reply.text!=None:
+                    #             print(reply.text)
+                    #         if reply.caption!=None:
+                    #             print(reply.caption)
                 except FloodWait as e:
                     time.sleep(e.value)
         except UsernameNotOccupied:
@@ -107,9 +151,7 @@ async def monitoring_start(time_msg):
 async def main():
     await pyrogram_client.start()
     #проверка существования папки для сохранения изображений
-    if not os.path.exists(DOWNLOAD_FOLDER):
-        os.makedirs(DOWNLOAD_FOLDER)
-    #Чтение всех постов(и комментариев опционально функцией comment_on) в минутах
+    #Чтение всех постов в часах
     await monitoring_start(240)
 
 
